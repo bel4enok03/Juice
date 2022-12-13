@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 5%;
+    padding: 10px 5%;
 }
 
 .header .navbar a {
@@ -58,22 +58,6 @@
 .header .navbar a:hover::before{
     width: 100%;
 }
-
-/* .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 39px;
-	padding-left: 123px;
-	padding-right: 123px;
-}
-
-.header .navbar a {
-	font-family: 'Roboto', sans-serif;
-	color: var(--black);
-	font-size: 20px;
-	margin: 0 38px;
-} */
 
 section {
 	padding: 50px 25px;
