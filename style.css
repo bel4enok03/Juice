@@ -201,10 +201,6 @@ input + input {
     .button {
         width: 135px !important;
     }
-	.homeImage img {
-		height: 350px !important;
-		margin-top: 10px !important;
-	}
 }
 
 
