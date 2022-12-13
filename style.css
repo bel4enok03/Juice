@@ -270,6 +270,9 @@ input + input {
         transform: rotate(180deg);
     }
 
+	.header{
+		position: static;
+	}
     .header .navbar{
         position: absolute;
         top: 99%; left: 0; right: 0;
