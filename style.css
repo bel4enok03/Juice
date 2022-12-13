@@ -72,6 +72,7 @@ section {
 
 .home .content {
 	width: 411px;
+
 }
 
 .home .content span {
@@ -219,94 +220,6 @@ input + input {
 }
 
 
-@media all and (max-width: 375px) {
-    .contactMap {
-        width: 280px !important;
-    }
-    input {
-        width: 280px !important;
-    }
-    .button {
-        width: 135px !important;
-    }
-}
-
-
-@media all and (max-width: 480px) {
-    .contactButton {
-        display: flex;
-        justify-content: center;
-    }
-    .contactMap {
-        width: 330px;
-    }
-}
-
-@media all and (max-width: 600px) {
-	.contentAbout {
-		flex-direction: column;
-	}
-	.home {
-		flex-direction: column;
-	}
-	.aboutImage {
-		margin-top: 30px;
-	}
-
-}
-
-@media all and (max-width: 800px) {
-	#menu-btn{
-        display: inline-block;
-    }
-
-    #menu-btn.fa-times{
-        transform: rotate(180deg);
-    }
-
-    .header .navbar{
-        position: absolute;
-        top: 99%; left: 0; right: 0;
-        background: var(--white);;
-        border-top: 0 5px 16px rgba(51, 51, 51, 1);;
-        padding: 80px 0;
-        text-align: center;
-        flex-flow: column;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    .header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    .header .navbar a{
-        display: block;
-        padding: 8px 0;
-        font-size: 18px;
-    }
-
-	.home .content {
-		width: 200px !important;
-	}
-	.home .content h3 {
-		font-size: 26px !important;
-	}
-	.homeImage img {
-		height: 350px;
-	}
-
-	.contactInfo {
-		flex-direction: column;
-	}
-	.contactMap {
-		margin-top: 30px;
-	}
-	.menu.menu {
-		margin-left: 20px;
-		margin-top: 53px;
-	}
-}
-
 @media all and (max-width: 1024px) {
 	.header .navbar a {
 		font-size: 12px;
@@ -347,3 +260,83 @@ input + input {
 		width: 400px;
 	}
 }
+
+@media all and (max-width: 800px) {
+	#menu-btn{
+        display: inline-block;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        background: var(--white);;
+        border-top: 0 5px 16px rgba(51, 51, 51, 1);;
+        padding: 80px 0;
+        text-align: center;
+        flex-flow: column;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        padding: 8px 0;
+        font-size: 18px;
+    }
+	.home {
+		flex-direction: column;
+	}
+	.home .content {
+		width: 200px;
+	}
+	.home .content h3 {
+		font-size: 26px;
+	}
+	.homeImage img {
+		height: 350px;
+	}
+	.menu.menu {
+		margin-left: 20px;
+		margin-top: 53px;
+	}
+	.contentAbout {
+		flex-direction: column;
+	}
+	.aboutImage {
+		margin-top: 30px;
+	}
+	.contactInfo {
+		flex-direction: column;
+	}
+	.contactMap {
+		margin-top: 30px;
+	}
+	
+	.contactButton {
+        display: flex;
+        justify-content: center;
+    }
+    .contactMap {
+        width: 330px;
+    }
+}
+
+
+@media all and (max-width: 375px) {
+    .contactMap {
+        width: 280px;
+    }
+    input {
+        width: 280px;
+    }
+    .button {
+        width: 135px;
+    }
+} 
