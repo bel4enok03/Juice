@@ -269,7 +269,6 @@ input + input {
     #menu-btn.fa-times{
         transform: rotate(180deg);
     }
-
     .header .navbar{
         position: absolute;
         top: 99%; left: 0; right: 0;
@@ -297,10 +296,14 @@ input + input {
 		width: 200px;
 	}
 	.home .content h3 {
-		font-size: 26px;
+		font-size: 20px;
 	}
 	.homeImage img {
-		height: 350px;
+		height: 250px;
+	}
+	.btn {
+		width: 100px;
+		margin-top: 10px;
 	}
 	.menu.menu {
 		margin-left: 20px;
@@ -339,5 +342,5 @@ input + input {
     .button {
         width: 135px;
     }
-	
+
 } 
