@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Roboto&family=Work+Sans:wght@300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+
+:root {
+	--orange: #fd5033;
+	--white: #ffffff;
+	--black: #000000;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 39px;
+	padding-left: 123px;
+	padding-right: 123px;
+}
+
+.header .navbar a {
+	font-family: 'Roboto', sans-serif;
+	color: var(--black);
+	font-size: 20px;
+	margin: 0 38px;
+}
+
+section {
+	padding: 50px 25px;
+}
+
+.home {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 100vh;
+}
+
+.home .content {
+	width: 411px;
+}
+
+.home .content span {
+	color: var(--orange);
+}
+
+.home .content h3 {
+	font-family: 'Lemon', cursive;
+	font-size: 64px;
+}
+
+.home .content p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	margin-top: 23px;
+	width: 262px;
+	line-height: 19.74px;
+	font-weight: 300;
+}
+
+.homeImage img {
+	height: 473px;
+}
+
+.btn {
+	background: var(--orange);
+	cursor: pointer;
+	font-size: 16px;
+	color: var(--white);
+	margin-top: 90px;
+	display: inline-block;
+	width: 135px;
+	height: 66px;
+	padding-top: 20px;
+	text-align: center;
+	border-radius: 30% 0% 30% 0% / 35% 0% 35% 0%;
+}
+
+.productBtn {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.button {
+	background: var(--orange);
+	cursor: pointer;
+	font-size: 16px;
+	color: var(--white);
+	margin-top: 90px;
+	display: inline-block;
+	border: none;
+	width: 135px;
+	height: 66px;
+	margin-top: 32px;
+	text-align: center;
+	border-radius: 30% 0% 30% 0% / 35% 0% 35% 0%;
+}
+
+.btnProduct {
+	background: var(--orange);
+	cursor: pointer;
+	font-size: 16px;
+	color: var(--white);
+	display: inline-block;
+	width: 135px;
+	height: 66px;
+	padding-top: 20px;
+	text-align: center;
+	border-radius: 30% 0% 30% 0% / 35% 0% 35% 0%;
+}
+.heading {
+	font-family: 'Lemon', cursive;
+	font-size: 64px;
+	text-align: center;
+	color: var(--black);
+}
+.productMenu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+.menu.menu {
+	margin-left: 77px;
+	margin-top: 54px;
+}
+
+.menu p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+.contentAbout {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.contentText {
+	width: 526px;
+}
+
+.contentText p {
+	font-size: 24px;
+}
+
+.contentText span {
+	color: var(--orange);
+}
+
+.aboutImage img {
+	height: 535px;
+}
+
+.contactInfo {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.contactForm {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	width: 330px;
+	height: 58px;
+	background: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 50px;
+	font-family: 'Work Sans';
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+}
+
+input + input {
+	margin-top: 32px;
+}
+
+
+@media all and (max-width: 375px) {
+    .contactMap {
+        width: 280px !important;
+    }
+    input {
+        width: 280px !important;
+    }
+    .button {
+        width: 135px !important;
+    }
+
+}
+
+
+@media all and (max-width: 480px) {
+    .contactButton {
+        display: flex;
+        justify-content: center;
+    }
+    .contactMap {
+        width: 330px;
+    }
+}
+
+@media all and (max-width: 600px) {
+	.contentAbout {
+		flex-direction: column;
+	}
+	.home {
+		flex-direction: column;
+	}
+	.aboutImage {
+		margin-top: 30px;
+	}
+
+}
+
+@media all and (max-width: 800px) {
+	.header {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.home .content {
+		width: 200px !important;
+	}
+	.home .content h3 {
+		font-size: 26px !important;
+	}
+	.homeImage img {
+		height: 350px;
+	}
+
+	.contactInfo {
+		flex-direction: column;
+	}
+	.contactMap {
+		margin-top: 30px;
+	}
+	.menu.menu {
+		margin-left: 20px;
+		margin-top: 54px;
+	}
+}
+
+@media all and (max-width: 1024px) {
+	.header .navbar a {
+		font-size: 12px;
+	}
+	section {
+		padding: 40px 20px;
+	}
+	.home .content {
+		width: 300px;
+	}
+	.home .content h3 {
+		font-size: 48px;
+	}
+
+	.home .content p {
+		font-size: 16px;
+		width: 200px;
+	}
+	.heading {
+		font-size: 32px;
+	}
+	.menu img {
+		width: 200px;
+	}
+	.contentText {
+		width: 300px;
+	}
+
+	.contentText p {
+		font-size: 16px;
+	}
+
+	.aboutImage img {
+		height: 350px;
+	}
+
+	.contactMap {
+		width: 400px;
+	}
+}
